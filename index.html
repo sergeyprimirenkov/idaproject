@@ -15,8 +15,8 @@
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a>Личный кабинет</a></li>
-        <li class="main-nav__item  main-nav__item--active"><a href="#">Платежи</a></li>
+        <li class="main-nav__item"><a href="#">Личный кабинет</a></li>
+        <li class="main-nav__item  main-nav__item--active"><a>Платежи</a></li>
         <li class="main-nav__item"><a href="#">История платежей</a></li>
         <li class="main-nav__item"><a href="#">Настройки</a></li>
         <li class="main-nav__item"><a href="#">Выйти</a></li>
@@ -45,14 +45,13 @@
       <h2 class="authorization__title">
           Данные банковской карты
         </h2>
-      <form class="authorization__form">
-        <div class="wrapper"></div>
+      <form class="authorization__form" id="form">
         <div class="authorization__form-group authorization__form-group--number-card">
           <label for="number" class="authorization__form-label">Номер карты</label>
-          <input type="number" class="authorization__form-input" id="number" required>
-          <input type="number" class="authorization__form-input" id="number2" required>
-          <input type="number" class="authorization__form-input" id="number3" required>
-          <input type="number" class="authorization__form-input" id="number4" required>
+          <input type="text" class="authorization__form-input authorization__form-input--number required numeric" id="number" minlength="4" maxlength="4" required="">
+          <input type="text" class="authorization__form-input authorization__form-input--number" id="number2" name="number" minlength="4" maxlength="4" required="">
+          <input type="text" class="authorization__form-input authorization__form-input--number" id="number3" name="number" minlength="4" maxlength="4" required="">
+          <input type="text" class="authorization__form-input authorization__form-input--number" id="number4" name="number" minlength="4" maxlength="4" required="">
         </div>
         <div class="authorization__form-group">
           <label for="date" class="authorization__form-label">Срок действия</label>
@@ -78,13 +77,14 @@
           </select>
         </div>
         <div class="authorization__form-group">
-          <input type="text" name="cardholder" placeholder="Держатель карты" class="authorization__form-input" required>
+          <input type="text" name="cardholder" placeholder="Держатель карты" class="authorization__form-input" id="cardholder" minlength="4" required>
         </div>
         <div class="authorization__form-group authorization__form-group--cvv">
           <label for="cvv" class="authorization__form-label">Код CVV/CVC2</label>
-          <input type="number" name="cvv" id="cvv" class="authorization__form-input" required>
+          <input type="text" name="cvv" id="cvv" class="authorization__form-input authorization__form-input--number" minlength="3" maxlength="3" required>
         </div>
         <button type="submit" class="btn btn--submit">Оплатить</button>
+        <div class="wrapper"></div>
       </form>
     </div>
     <div class="authorization__text">
