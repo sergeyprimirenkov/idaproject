@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IDA Project</title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body class="page-body">
+  <nav class="main-nav  main-nav--closed  main-nav--nojs">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#">Личный кабинет</a></li>
+        <li class="main-nav__item  main-nav__item--active"><a>Платежи</a></li>
+        <li class="main-nav__item"><a href="#">История платежей</a></li>
+        <li class="main-nav__item"><a href="#">Настройки</a></li>
+        <li class="main-nav__item"><a href="#">Выйти</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="authorization">
+    <div class="authorization__wrapper">
+      <table class="authorization__pay-info">
+        <thead>
+          <tr>
+            <th>Информация по оплате:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Номер счета:</td>
+            <td>87123658716587</td>
+          </tr>
+          <tr>
+            <td>Сумма платежа:</td>
+            <td>100 руб.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="authorization__title">
+          Данные банковской карты
+        </h2>
+      <form class="authorization__form" id="form">
+        <div class="authorization__form-group authorization__form-group--number-card">
+          <label for="number" class="authorization__form-label">Номер карты</label>
+          <input type="text" class="authorization__form-input authorization__form-input--number required numeric" id="number" minlength="4" maxlength="4" required="">
+          <input type="text" class="authorization__form-input authorization__form-input--number" id="number2" name="number" minlength="4" maxlength="4" required="">
+          <input type="text" class="authorization__form-input authorization__form-input--number" id="number3" name="number" minlength="4" maxlength="4" required="">
+          <input type="text" class="authorization__form-input authorization__form-input--number" id="number4" name="number" minlength="4" maxlength="4" required="">
+        </div>
+        <div class="authorization__form-group">
+          <label for="date" class="authorization__form-label">Срок действия</label>
+          <select class="authorization__form-input" id="date">
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          <select class="authorization__form-input">
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+          </select>
+        </div>
+        <div class="authorization__form-group">
+          <input type="text" name="cardholder" placeholder="Держатель карты" class="authorization__form-input" id="cardholder" minlength="4" required>
+        </div>
+        <div class="authorization__form-group authorization__form-group--cvv">
+          <label for="cvv" class="authorization__form-label">Код CVV/CVC2</label>
+          <input type="text" name="cvv" id="cvv" class="authorization__form-input authorization__form-input--number" minlength="3" maxlength="3" required>
+        </div>
+        <button type="submit" class="btn btn--submit">Оплатить</button>
+        <div class="wrapper"></div>
+      </form>
+    </div>
+    <div class="authorization__text">
+    <p>
+        Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+      </p>
+      <p>
+        Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+      </p>
+      <p>
+        Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+      </p>
+      <p>
+        Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+      </p>
+      </div>
+  </section>
+
+  <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
